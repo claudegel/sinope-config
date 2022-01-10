@@ -45,8 +45,8 @@ const sortSchedules = (schedules: Schedule[], hass: HomeAssistant) => {
   return output;
 };
 
-@customElement('scheduler-entities-card')
-export class SchedulerEntitiesCard extends SubscribeMixin(LitElement) {
+@customElement('config-entities-card')
+export class ConfigEntitiesCard extends SubscribeMixin(LitElement) {
   @property()
   config?: CardConfig;
 
