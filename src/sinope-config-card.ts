@@ -26,21 +26,21 @@ import { migrateActionConfig } from './data/actions/migrate_action_config';
 
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
-  type: 'scheduler-card',
-  name: 'Scheduler Card',
-  description: 'Card to manage schedule entities made with scheduler-component.',
+  type: 'sinpe-config-card',
+  name: 'Sinope config Card',
+  description: 'Card to manage sinope entities configuration.',
 });
 
 console.info(
-  `%c  SCHEDULER-CARD  \n%c  Version: ${CARD_VERSION.padEnd(7, ' ')}`,
+  `%c  SINOPE_CONFIG-CARD  \n%c  Version: ${CARD_VERSION.padEnd(7, ' ')}`,
   'color: orange; font-weight: bold; background: black',
   'color: white; font-weight: bold; background: dimgray'
 );
 
-@customElement('scheduler-card')
-export class SchedulerCard extends LitElement {
+@customElement('sinope-config-card')
+export class SinopeConfigCard extends LitElement {
   public static getConfigElement(): LovelaceCardEditor {
-    return document.createElement('scheduler-card-editor');
+    return document.createElement('sinope-card-editor');
   }
 
   @property() _config?: CardConfig;
@@ -138,7 +138,7 @@ export class SchedulerCard extends LitElement {
       `;
     } else if (this._view == EViews.Options) {
       return html`
-      <scheduler-options-card
+      <config-options-card
         .hass=${this._hass}
         .config=${this._config}
         .schedule=${this.schedule}
@@ -146,7 +146,7 @@ export class SchedulerCard extends LitElement {
         @saveClick=${this._saveItemClick}
         @backClick=${this._optionsBackClick}
       >
-      </scheduler-timescheme-card>
+      </config-timescheme-card>
     `;
     } else return html``; //shouldnt happen!
   }
