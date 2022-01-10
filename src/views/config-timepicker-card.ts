@@ -34,8 +34,8 @@ import { assignAction } from '../data/actions/assign_action';
 import { parseRelativeTime, stringToTime } from '../data/date-time/time';
 import { absToRelTime, relToAbsTime } from '../data/date-time/relative_time';
 
-@customElement('scheduler-timepicker-card')
-export class SchedulerTimepickerCard extends LitElement {
+@customElement('config-timepicker-card')
+export class ConfigTimepickerCard extends LitElement {
   @property()
   hass?: HomeAssistant;
 
