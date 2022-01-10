@@ -7,11 +7,11 @@ import { CARD_VERSION, EViews, DefaultCardConfig } from './const';
 import { calculateTimeline, flatten, unique, omit, IsDefaultName, isDefined, AsArray, pick } from './helpers';
 import { ValidateConfig } from './config-validation';
 
-import './views/scheduler-entities-card';
-import './views/scheduler-entitypicker-card';
-import './views/scheduler-timepicker-card';
-import './views/scheduler-options-card';
-import './views/scheduler-card-editor';
+import './views/config-entities-card';
+import './views/config-entitypicker-card';
+import './views/config-timepicker-card';
+import './views/config-options-card';
+import './views/config-card-editor';
 
 import './components/dialog-error';
 import './components/dialog-delete-defective';
