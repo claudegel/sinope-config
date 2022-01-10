@@ -18,8 +18,8 @@ import { computeActions } from '../data/actions/compute_actions';
 import '../components/button-group';
 import { compareActions } from '../data/actions/compare_actions';
 
-@customElement('scheduler-editor-card')
-export class SchedulerEditorCard extends LitElement {
+@customElement('config-editor-card')
+export class ConfigEditorCard extends LitElement {
   @property()
   hass?: HomeAssistant;
 
