@@ -94,8 +94,8 @@ const getMatchTypes = (hass: HomeAssistant, filter?: EConditionMatchType[]) => {
   return output;
 };
 
-@customElement('scheduler-options-card')
-export class SchedulerOptionsCard extends LitElement {
+@customElement('config-options-card')
+export class ConfigOptionsCard extends LitElement {
   @property()
   hass?: HomeAssistant;
 
