@@ -16,8 +16,8 @@ import { domainIcons } from '../standard-configuration/standardIcon';
 import { standardStates } from '../standard-configuration/standardStates';
 import { entityFilter } from '../data/entities/entity_filter';
 
-@customElement('scheduler-card-editor')
-export class SchedulerCardEditor extends LitElement implements LovelaceCardEditor {
+@customElement('config-card-editor')
+export class ConfigCardEditor extends LitElement implements LovelaceCardEditor {
   @property()
   public hass?: HomeAssistant;
 
