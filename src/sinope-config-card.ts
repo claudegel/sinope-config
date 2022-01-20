@@ -26,7 +26,7 @@ import { migrateActionConfig } from './data/actions/migrate_action_config';
 
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
-  type: 'sinpe-config-card',
+  type: 'sinope-config-card',
   name: 'Sinope config Card',
   description: 'Card to manage sinope entities configuration.',
 });
